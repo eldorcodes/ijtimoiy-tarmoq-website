@@ -36,3 +36,168 @@
     transform: rotate(360deg);
   }
 }
+.form-register {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 10px;
+  width: 400px;
+}
+
+.input-register {
+  width: 100%;
+  align-self: flex-start;
+  padding: 5px;
+}
+.btn-register {
+  width: 100%;
+  align-self: flex-start;
+  padding: 10px;
+  background-color: steelblue;
+  border: 0;
+  color: aliceblue;
+  font-size: medium;
+}
+.register {
+  color: aliceblue;
+}
+.link {
+  color: white;
+  text-align: center;
+  align-self: center;
+}
+.user-div {
+  display: flex;
+  flex-direction: row;
+}
+.users-btn {
+  width: 100%;
+  border: 0;
+}
+.users-btn:hover{
+  background-color: steelblue;
+  color: aliceblue;
+}
+/** chat room style */
+#chat-box {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  box-sizing: border-box;
+  left: 0;
+  right: 0;
+  height: auto;
+}
+#chat-input {
+  flex-grow: 1;
+  border: 1;
+  height: 3rem;
+  width: 80%;
+}
+#send-btn {
+height: 3rem;
+width: 10%;
+background-color: teal;
+border: 0;
+color: aliceblue;
+}
+#send-btn2 {
+  height: 3rem;
+  width: 10%;
+  background-color: rgb(103, 15, 141);
+  border: 0;
+  color: aliceblue;
+  }
+#chat-input:focus{
+  outline: none;
+}
+.chat-box {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+.chat-item-sender {
+  width: 100%;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: row;
+}
+.chat-item-receiver {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.message {
+  background-color: gray;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 20px;
+  border-bottom-left-radius: 0%;
+}
+.message2 {
+  background-color: rgb(74, 17, 217);
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  border-bottom-right-radius: 0%;
+  margin: 20px;
+}
+.chat-message-box {
+  padding: 10px;
+}
+.post-body {
+  width: 100%;
+}
+.post-btn {
+  width: 100%;
+  background-color: steelblue;
+  border: 0;
+  padding: 10px;
+  color: aliceblue;
+  border-radius: 5px;
+}
+.post-file {
+  margin-bottom: 5px;
+}
+.post-header {
+  display: flex;
+  flex-direction: row;
+}
+.post-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  padding: 10px;
+  padding-top: 70px;
+}
+.post-children {
+  max-width: 700px;
+}
+.post-child {
+  padding: 10px;
+}
+.toggle-input {
+  width: 100%;
+  padding: 10px;
+}
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+}
+.logout-btn {
+  background-color: red;
+  color: aliceblue;
+  border: 0;
+  padding: 10px;
+}
+.users-container {
+  padding-top: 70px;
+}

@@ -91,7 +91,7 @@ export default function ChatRoom() {
     }
 
 
-  return <div>
+  return <div style={{ paddingTop:50 }}>
     <div ref={scrollRef}
     className="chat-box">
         {chats?.map((chat,index) => (

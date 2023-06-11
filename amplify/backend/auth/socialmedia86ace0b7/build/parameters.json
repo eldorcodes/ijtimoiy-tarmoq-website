@@ -1,0 +1,59 @@
+{
+  "identityPoolName": "socialmedia86ace0b7_identitypool_86ace0b7",
+  "allowUnauthenticatedIdentities": true,
+  "resourceNameTruncated": "social86ace0b7",
+  "userPoolName": "socialmedia86ace0b7_userpool_86ace0b7",
+  "autoVerifiedAttributes": [
+    "email"
+  ],
+  "mfaConfiguration": "OFF",
+  "mfaTypes": [
+    "SMS Text Message"
+  ],
+  "smsAuthenticationMessage": "Your authentication code is {####}",
+  "smsVerificationMessage": "Your verification code is {####}",
+  "emailVerificationSubject": "Your verification code",
+  "emailVerificationMessage": "Your verification code is {####}",
+  "defaultPasswordPolicy": false,
+  "passwordPolicyMinLength": 8,
+  "passwordPolicyCharacters": [],
+  "requiredAttributes": [
+    "email"
+  ],
+  "aliasAttributes": [],
+  "userpoolClientGenerateSecret": false,
+  "userpoolClientRefreshTokenValidity": 30,
+  "userpoolClientWriteAttributes": [
+    "email"
+  ],
+  "userpoolClientReadAttributes": [
+    "email"
+  ],
+  "userpoolClientLambdaRole": "social86ace0b7_userpoolclient_lambda_role",
+  "userpoolClientSetAttributes": false,
+  "sharedId": "86ace0b7",
+  "resourceName": "socialmedia86ace0b7",
+  "authSelections": "identityPoolAndUserPool",
+  "useDefault": "default",
+  "usernameAttributes": [
+    "email"
+  ],
+  "userPoolGroupList": [],
+  "serviceName": "Cognito",
+  "usernameCaseSensitive": false,
+  "useEnabledMfas": true,
+  "authRoleArn": {
+    "Fn::GetAtt": [
+      "AuthRole",
+      "Arn"
+    ]
+  },
+  "unauthRoleArn": {
+    "Fn::GetAtt": [
+      "UnauthRole",
+      "Arn"
+    ]
+  },
+  "breakCircularDependency": true,
+  "dependsOn": []
+}

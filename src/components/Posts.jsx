@@ -124,8 +124,8 @@ export default function Posts() {
             className="post-child"
             key={index}>
                 <div className="post-header">
-                    <img src={getUserAvatar(post.val().user) ? getUserAvatar(post.val().user) : require('./user.jpeg')} alt="avatar" style={{width:65,height:65,borderRadius:45}} />
-                    <div>
+                    <img src={getUserAvatar(post.val().user) ? getUserAvatar(post.val().user) : require('./user.jpeg')} alt="avatar" style={{width:40,height:40,borderRadius:20}} />
+                    <div style={{paddingLeft:10}}>
                         <h1>{getUsername(post.val().user)}</h1>
                         <p>{post.val().date}</p>
                     </div>

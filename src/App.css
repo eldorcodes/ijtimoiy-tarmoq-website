@@ -41,14 +41,22 @@
   flex-direction: column;
   gap: 10px;
   align-items: flex-start;
-  padding: 10px;
-  width: 400px;
+  padding: 20px;
+  width: 300px;
+  border: 1px solid gray;
+  background-color: slateblue;
 }
 
 .input-register {
   width: 100%;
   align-self: flex-start;
-  padding: 5px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 16px;
+  padding: 10px;
+}
+.input-register:focus{
+  outline: none;
 }
 .btn-register {
   width: 100%;
@@ -58,6 +66,7 @@
   border: 0;
   color: aliceblue;
   font-size: medium;
+  border-radius: 5px;
 }
 .register {
   color: aliceblue;
@@ -70,6 +79,14 @@
 .user-div {
   display: flex;
   flex-direction: row;
+}
+.users-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 5px;
 }
 .users-btn {
   width: 100%;
@@ -199,5 +216,5 @@ color: aliceblue;
   padding: 10px;
 }
 .users-container {
-  padding-top: 70px;
+  padding-top: 60px;
 }

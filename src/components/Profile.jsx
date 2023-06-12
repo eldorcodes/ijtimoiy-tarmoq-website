@@ -71,7 +71,7 @@ export default function Profile() {
     <input onChange={(e) => uploadImage(e.target.files[0])}
     ref={imageRef} type="file" name="file" style={{display:'none'}} />
     <div className="profile-container">
-        <img style={{width:220,height:'auto'}}
+        <img style={{width:100,height:100,borderRadius:60}}
         onClick={selectImage} src={user?.val().profilePicture ? user?.val().profilePicture : Logo} alt="avatar" />
         {progressText && <p>{progressText}</p>}
         {errorMessage && <p>{errorMessage}</p>}

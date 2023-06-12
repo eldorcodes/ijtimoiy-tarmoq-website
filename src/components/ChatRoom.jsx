@@ -98,7 +98,7 @@ export default function ChatRoom() {
             <div className="chat-message-box">
                 {chat.val().receiver == getAuth().currentUser.uid ? <div key={index}
             className={chat.val().receiver == getAuth().currentUser.uid ? 'chat-item-receiver' : 'chat-item-sender'}>
-            <img src={getUserAvatar(chat.val().sender) ? getUserAvatar(chat.val().sender) : require('./user.jpeg')} alt="avatar" style={{width:60,height:55,borderRadius:30}} />
+            <img src={getUserAvatar(chat.val().sender) ? getUserAvatar(chat.val().sender) : require('./user.jpeg')} alt="avatar" style={{width:40,height:40,borderRadius:20}} />
             <div>
             {chat.val().message && <p className="message">{chat.val().message}</p>}
             {chat.val().image && <img src={chat.val().image} alt="image" width={300} height={'auto'} /> }
@@ -115,7 +115,7 @@ export default function ChatRoom() {
             <br />
             <small>{new Date(chat?.val().date).toDateString()}</small>
             </div>
-            <img src={getUserAvatar(chat.val().sender) ? getUserAvatar(chat.val().sender) : require('./user.jpeg')} alt="avatar" style={{width:60,height:55,borderRadius:30}} />
+            <img src={getUserAvatar(chat.val().sender) ? getUserAvatar(chat.val().sender) : require('./user.jpeg')} alt="avatar" style={{width:40,height:40,borderRadius:20}} />
             </div>
             }
             </div>
